@@ -1,11 +1,5 @@
+import os, sys
+
 from django.core.handlers.wsgi import WSGIHandler
-
-import pinax.env
-
-
-# setup the environment for Django and Pinax
-pinax.env.setup_environ(__file__)
-
-
-# set application for WSGI processing
+os.environ["DJANGO_SETTINGS_MODULE"] = "myproject.settings"
 application = WSGIHandler()
