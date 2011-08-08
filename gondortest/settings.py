@@ -1,5 +1,5 @@
 # Django settings for gondortest project.
-
+import local_settings
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
 
